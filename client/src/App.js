@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import axios from "axios";
-import Players from "./Components/Players";
+import Players from "./components/Players";
+import NavBar from "./components/NavBar";
 
 class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      players: [],
-      search: ''
+      players: []
     }
   }
 
@@ -23,37 +23,10 @@ class App extends React.Component {
     })
   }
 
-  // changeHandler = e=> {
-  //   this.setState({
-  //     search: e.target.value
-  //   })
-  //   console.log(this.state.search)
-  // }
-
-  // formHandler = e =>{
-  //   e.preventDefault();
-  //   const setSearch = this.state.search;
-  //   axios.get(`https://api.github.com/users/${setSearch}`)
-  //   .then(res=> {
-  //     this.setState({
-  //       main: res.data
-  //     })
-  //     return res.data.followers_url
-  //   })
-  //   .then(res => {
-  //     axios.get(res)
-  //     .then(res => {
-  //       this.setState({
-  //         followers: res.data
-  //       })
-  //     })
-  //   })
-  // }
-
   render() {
     return (
       <div className="App">
-        <p>My app lives here</p>
+        <NavBar />
         <Players players={this.state.players} />
       </div>
     );
