@@ -130,13 +130,16 @@ table {
 
 /* General Styles */
 
+@import url('https://fonts.googleapis.com/css?family=Caveat|Cinzel&display=swap');
+
 * {
-  box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 500;
 }
 
@@ -175,9 +178,12 @@ img {
 
 
 .App {
-  font-family: sans-serif;
+  font-family: 'Cinzel', serif;
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navbar {
@@ -194,7 +200,7 @@ img {
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: rgb(221, 221, 221);
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -203,7 +209,7 @@ img {
 }
 
 .toggle {
-  background: #f68819;
+  background: rgb(111, 126, 151);
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -217,8 +223,16 @@ img {
 }
 
 
-
 .dark-mode {
   color: #fff;
   background-color: #313843;
+}
+
+.card {
+  width: 400px;
+  margin: 1%;
+  margin-top: 2%;
+  padding: 2rem;
+  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  border-radius: 10px;
 }

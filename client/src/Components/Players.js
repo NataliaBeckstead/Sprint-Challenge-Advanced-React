@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 class Players extends Component {
 
@@ -7,7 +7,7 @@ class Players extends Component {
             this.props.players.map(player => {
                 return (
                     <div className='card'>
-                        <h2 className='playername'>{player.name}</h2>
+                        <h2>{player.name}</h2>
                         <p>Country: {player.country}</p>
                         <p>Searches: {player.searches}</p>
                     </div>
